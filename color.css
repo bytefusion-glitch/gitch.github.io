@@ -1,8 +1,8 @@
 :root{
---first: #ffd1db
---stripone: #735ad2
---striptwo: #5caf21
---stripthree: #b1573f
+    --first: #ffd1db;
+    --stripone: #735ad2;
+    --striptwo: #5caf21;
+    --stripthree: #b1573f;
 }
 /* Colors 
 #fbe00a → Bright Yellow
