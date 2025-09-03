@@ -180,12 +180,21 @@ e-screen" alt="QR Code" width="100%" usemap="#passimageMap">
     </script>
 
     <script>
-    // Toggle the number between 3 and 7
-    document.querySelector('.rectangle-text1').addEventListener('click', function () {
-        this.textContent = this.textContent === '3' ? '7' : '3';
+  (function () {
+    const el = document.querySelector('.rectangle-text1');
+    const zones = [3, 4, 7];
+
+    // Start from whatever number is currently shown (fallback to first)
+    let i = Math.max(0, zones.indexOf(parseInt((el.textContent || '').trim(), 10)));
+
+    el.addEventListener('click', () => {
+      i = (i + 1) % zones.length;
+      el.textContent = String(zones[i]);
     });
+  })();
 </script>
 
 </body>
 
 </html>
+
