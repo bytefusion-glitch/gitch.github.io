@@ -214,10 +214,11 @@ body {
 .bip {
     margin-top: -10px;
     margin-bottom: 8px;
-    font-weight: 100;
+    font-weight: 400;
     color: red;
     font-size: 65px;
     width: 100%;
     text-align: center;
 }
+
 
